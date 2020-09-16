@@ -269,7 +269,7 @@
     "@types/keygrip" "*"
     "@types/node" "*"
 
-"@types/cors@^2.8.4":
+"@types/cors@^2.8.4", "@types/cors@^2.8.7":
   version "2.8.7"
   resolved "https://registry.yarnpkg.com/@types/cors/-/cors-2.8.7.tgz#ab2f47f1cba93bce27dfd3639b006cc0e5600889"
   integrity sha512-sOdDRU3oRS7LBNTIqwDkPJyq0lpHYcbMTt0TrjzsXbk/e37hcLTH6eZX7CdbDeN0yJJvzw9hFBZkbtCSbk/jAQ==
@@ -293,7 +293,7 @@
     "@types/express" "*"
     "@types/node" "*"
 
-"@types/express@*":
+"@types/express@*", "@types/express@^4.17.8":
   version "4.17.8"
   resolved "https://registry.yarnpkg.com/@types/express/-/express-4.17.8.tgz#3df4293293317e61c60137d273a2e96cd8d5f27a"
   integrity sha512-wLhcKh3PMlyA2cNAB9sjM1BntnhPMiM0JOBwPBqttjHev2428MLEB4AYVN+d8s2iyCVZac+o41Pflm/ZH5vLXQ==
@@ -312,13 +312,6 @@
     "@types/express-serve-static-core" "*"
     "@types/qs" "*"
     "@types/serve-static" "*"
-
-"@types/express@types/express":
-  version "4.14.0"
-  resolved "https://codeload.github.com/types/express/tar.gz/7670cf1cbce96b3159e3ff04a253926b34111220"
-  dependencies:
-    "@types/serve-static" "github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0"
-    path-to-regexp "github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4"
 
 "@types/fs-capacitor@*":
   version "2.0.0"
@@ -462,10 +455,6 @@
   dependencies:
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
-
-"@types/serve-static@github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0":
-  version "1.11.1"
-  resolved "https://codeload.github.com/types/npm-serve-static/tar.gz/c1f96843c8b96a37f6c534cb1dadb48f5329e4e0"
 
 "@types/ws@^7.0.0":
   version "7.2.6"
@@ -2338,11 +2327,6 @@ is-yarn-global@^0.3.0:
   resolved "https://registry.yarnpkg.com/is-yarn-global/-/is-yarn-global-0.3.0.tgz#d502d3382590ea3004893746754c89139973e232"
   integrity sha512-VjSeb/lHmkoyd8ryPVIKvOCn4D1koMqY+vqyjjUfc3xyKtP4dYOxM44sZrnqQSzSds3xyOrUTLTC9LVCVgLngw==
 
-isarray@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
-  integrity sha1-ihis/Kmo9Bd+Cav8YDiTmwXR7t8=
-
 isarray@1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
@@ -3066,12 +3050,6 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
-
-"path-to-regexp@github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4":
-  version "1.5.3"
-  resolved "https://codeload.github.com/pillarjs/path-to-regexp/tar.gz/ec285ed3500aed455df59e3b8b07f473412918a4"
-  dependencies:
-    isarray "0.0.1"
 
 path-type@^4.0.0:
   version "4.0.0"
