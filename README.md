@@ -30,6 +30,10 @@ foo@bar/web:~$ yarn dev
 ```console
 foo@bar:~$ redis-server
 ```
+---
+# Troubleshooting notes: 
+### Cookie issues in `Dev`
+- Be sure to set request.credentials = "omit" -> request.credentials = "include" in GraphQL playgrounds if cookie isn't being set. 
 
 
 
