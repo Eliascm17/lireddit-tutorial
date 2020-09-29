@@ -7,15 +7,15 @@ import Redis from "ioredis";
 import "reflect-metadata";
 import { buildSchema } from "type-graphql";
 import { createConnection } from "typeorm";
-import { COOKIE_NAME, __prod__ } from "./constants";
+import path from "path";
 import { Post } from "./entities/Post";
 import { User } from "./entities/User";
 import { HelloResolver } from "./resolvers/hello";
 import { PostResolver } from "./resolvers/post";
 import { UserResolver } from "./resolvers/user";
+import { COOKIE_NAME, __prod__ } from "./constants";
 
 const main = async () => {
-  
   const conn = await createConnection({
     type: "postgres",
     database: "lireddit2",
@@ -23,8 +23,12 @@ const main = async () => {
     password: "Elias1799",
     logging: true,
     synchronize: true,
+    migrations: [path.join(__dirname, "./migrations/*")],
     entities: [Post, User],
   });
+
+  // await Post.delete({});
+  await conn.runMigrations();
 
   const app = express();
 
@@ -34,7 +38,7 @@ const main = async () => {
   app.use(
     cors({
       origin: "http://localhost:3000",
-      credentials: true
+      credentials: true,
     })
   );
 
